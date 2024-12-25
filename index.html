@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дизайн интерьера</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1920/1080');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Навигация -->
+    <nav class="fixed w-full bg-black bg-opacity-50 text-white z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">DESIGN STUDIO</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#services" class="hover:text-gray-300">Услуги</a>
+                <a href="#portfolio" class="hover:text-gray-300">Портфолио</a>
+                <a href="#contact" class="hover:text-gray-300">Контакты</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Главный баннер -->
+    <section class="hero flex items-center">
+        <div class="container mx-auto px-6 text-center text-white">
+            <h1 class="text-5xl font-bold mb-4">Дизайн и ремонт помещений</h1>
+            <p class="text-xl mb-8">От концепции до реализации</p>
+            <a href="#contact" class="bg-white text-black px-8 py-3 rounded-lg hover:bg-gray-200 transition">
+                Обсудить проект
+            </a>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16">Наши услуги</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <img src="/api/placeholder/600/400" alt="Дизайн интерьера квартир" class="w-full mb-6 rounded">
+                    <h3 class="text-2xl font-bold mb-4">Дизайн и ремонт жилых помещений</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li>• Разработка планировочных решений</li>
+                        <li>• Создание уникального дизайн-проекта</li>
+                        <li>• Подбор материалов и мебели</li>
+                        <li>• Ремонтно-отделочные работы</li>
+                        <li>• Авторский надзор</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <img src="/api/placeholder/600/400" alt="Дизайн баров" class="w-full mb-6 rounded">
+                    <h3 class="text-2xl font-bold mb-4">Дизайн и ремонт баров и ресторанов</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li>• Проектирование коммерческих пространств</li>
+                        <li>• Разработка зонирования</li>
+                        <li>• Создание уникального стиля</li>
+                        <li>• Комплексный ремонт помещений</li>
+                        <li>• Подбор оборудования и мебели</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Портфолио -->
+    <section id="portfolio" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16">Наши проекты</h2>
+            <div class="mb-12">
+                <div class="max-w-3xl mx-auto">
+                    <div class="flex items-center justify-center mb-8">
+                        <img src="/api/placeholder/200/100" alt="Wine Folly logo" class="h-16">
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8 mb-12">
+                        <div>
+                            <img src="/api/placeholder/600/400" alt="Витрины" class="w-full rounded-lg shadow-xl mb-4">
+                            <p class="text-gray-600">Современные витрины с интегрированной LED подсветкой</p>
+                        </div>
+                        <div>
+                            <img src="/api/placeholder/600/400" alt="Зона отдыха" class="w-full rounded-lg shadow-xl mb-4">
+                            <p class="text-gray-600">Уютная зона отдыха с дизайнерской мебелью</p>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 gap-6 mb-8">
+                        <img src="/api/placeholder/400/400" alt="Детали интерьера 1" class="w-full rounded-lg shadow-lg">
+                        <img src="/api/placeholder/400/400" alt="Детали интерьера 2" class="w-full rounded-lg shadow-lg">
+                        <img src="/api/placeholder/400/400" alt="Детали интерьера 3" class="w-full rounded-lg shadow-lg">
+                    </div>
+
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h4 class="text-xl font-bold mb-4">О проекте</h4>
+                        <p class="text-gray-600 mb-4">Комплексный дизайн интерьера винного бара в современном стиле. Проект включает:</p>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                            <li>Разработку уникальной системы хранения вин с подсветкой</li>
+                            <li>Дизайн зоны отдыха с авторской мебелью</li>
+                            <li>Создание фирменных элементов интерьера</li>
+                            <li>Подбор декоративных элементов и освещения</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16">Связаться с нами</h2>
+            <div class="max-w-lg mx-auto">
+                <form class="space-y-6">
+                    <div>
+                        <label class="block mb-2">Ваше имя</label>
+                        <input type="text" class="w-full p-3 border rounded">
+                    </div>
+                    <div>
+                        <label class="block mb-2">Телефон</label>
+                        <input type="tel" class="w-full p-3 border rounded">
+                    </div>
+                    <div>
+                        <label class="block mb-2">Сообщение</label>
+                        <textarea class="w-full p-3 border rounded h-32"></textarea>
+                    </div>
+                    <button class="w-full bg-black text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="bg-black text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2024 Design Studio. Все права защищены.</p>
+            <div class="mt-4">
+                <p>Телефон: +7 (999) 123-45-67</p>
+                <p>Email: info@designstudio.ru</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
